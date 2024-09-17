@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 const socketIo = require('socket.io');
 const exphbs = require('express-handlebars');
-const { sequelize, Submission } = require('./models');
+const { sequelize, Submission } = require('./backend/models');
 
 const app = express();
 const server = http.createServer(app);
@@ -20,10 +20,10 @@ app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Routes
-const indexRouter = require('./routes/index');
-const aboutRouter = require('./routes/about');
-const authorsRouter = require('./routes/authors');
-const joinRouter = require('./routes/join');
+const indexRouter = require('./backend/routes/index');
+const aboutRouter = require('./backend/routes/about');
+const authorsRouter = require('./backend/routes/authors');
+const joinRouter = require('./backend/routes/join');
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
