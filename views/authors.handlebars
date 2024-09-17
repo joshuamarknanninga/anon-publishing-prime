@@ -1,0 +1,11 @@
+<main>
+  <h1>Recent Authors</h1>
+  <ul id="submissions-list">
+    {{#each submissions}}
+      <li>
+        <p>{{this.content}}</p>
+        <small>Posted on {{this.createdAt}}</small>
+      </li>
+    {{/each}}
+  </ul>
+</main>
