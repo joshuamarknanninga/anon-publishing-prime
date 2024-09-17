@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #1e1e1e;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 1em;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    resize: vertical;
+  }
+  
