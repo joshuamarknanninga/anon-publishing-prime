@@ -1,0 +1,13 @@
+/* theme1.css */
+body {
+    background-color: #0d0d0d;
+  }
+  
+  header, footer {
+    background-color: #1a1a1a;
+  }
+  
+  h1 {
+    color: #ff6347;
+  }
+  
