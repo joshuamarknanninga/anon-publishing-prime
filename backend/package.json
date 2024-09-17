@@ -1,0 +1,15 @@
+{
+  "name": "anonymous-publishing-site",
+  "version": "1.0.0",
+  "description": "Anonymous publishing website with a dark web aesthetic",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
+
