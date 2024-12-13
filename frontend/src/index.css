@@ -3,4 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles can be added here */
+/* Custom Styles */
+body {
+  @apply bg-black text-green-500;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
